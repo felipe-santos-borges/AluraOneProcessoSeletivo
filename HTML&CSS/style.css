@@ -1,8 +1,22 @@
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10%;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
 body {
+    height: 100vh;
+    box-sizing: border-box;
     background-color: black;
     color: #F6F6F6;
 }
 
-strong {
+.titulo-destaque {
     color: #22D4FD;
 }
