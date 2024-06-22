@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+    --cor-primaria: #2C3639;
+    --cor-secundaria: #A27B5C;
+    --cor-terciaria : #DCD7C9;
+    --cor-hover: #DCD7C9;
+
+    --fonte-primaria: "Krona one", sans-serif;
+    --fonte-secundaria:"Montserrat", sans-serif;
+
+}
+
 .apresentacao {
     display: flex;
     align-items: center;
@@ -14,14 +25,14 @@
 }
 
 body {
-    /* height: 100vh; */
+   
     box-sizing: border-box;
-    background-color: black;
-    color: #F6F6F6;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria)
 }
 
 .titulo-destaque {
-    color: #22D4FD;
+    color: var(--cor-terciaria);
 }
 .apresentacao__conteudo {
     width: 615px;
@@ -32,7 +43,7 @@ body {
 
 .apresentacao__conteudo__titulo {
     font-size: 36px;
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fonte-primaria);
 }
 
 .cabecalho {
@@ -45,16 +56,16 @@ body {
 }
 
 .cabecalho__menu__link {
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
     font-weight: 600;
-    color: #22D4FD;
+    color: var(--cor-terciaria);
     text-decoration: none;
 }
 
 .apresentacao__conteudo__paragrafo {
     font-size: 24px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-secundaria);
 }
 
 .apresentacao__links {
@@ -66,7 +77,6 @@ body {
 }
 
 .apresentacao__links__link{
-    /* background-color: #22D4FD; */
     display: flex;
     justify-content: center;
     gap: 16px;
@@ -76,28 +86,28 @@ body {
     font-size: 24px;
     padding: 21.5px 0;
     text-decoration: none;
-    color: #F6F6F6;
-    border: solid 2px #22D4FD;
-    font-family:  "Montserrat", sans-serif;
+    color: var(--cor-secundaria);
+    border: solid 2px,var(--cor-terciaria);
+    font-family:  var(--fonte-secundaria);
     font-weight: 600;
 }
 
 .apresentacao__links__link:hover{
-    background-color: #272727;
+    background-color: var(--cor-hover);
 }
 
 .apresentacao__links__subtitulo {
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fonte-primaria);
     font-weight: 400;
     font-size: 24px;
 }
 
 .rodape {
-    background-color: #22D4FD;
-    color: black;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
     padding: 24px;
     text-align: center;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
     font-weight: 400;
 }
